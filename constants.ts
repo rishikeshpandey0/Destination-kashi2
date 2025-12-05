@@ -31,9 +31,9 @@ export const INITIAL_SITE_IMAGES: SiteImages = {
   "homeIntroVaranasi": "https://images.unsplash.com/photo-1561359313-0639aad49ca6?q=80&w=600&auto=format&fit=crop",
   "homeIntroAyodhya": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSFw6WEAetVwGP4PyPg3wXjat-6-q7ChqXKw&s",
   "homeCtaBackground": "https://images.unsplash.com/photo-1590458671607-b3623b2075b6?q=80&w=1920&auto=format&fit=crop",
-  "aboutHeaderBackground": "components\\images\\about-us.png",
-  "aboutJourneyImage": "components\\images\\25+years.jpeg",
-  "servicesHeaderBackground": "components\\images\\our-services.jpg"
+  "aboutHeaderBackground": "images\\about-us.png",
+  "aboutJourneyImage": "images\\25+years.jpeg",
+  "servicesHeaderBackground": "images\\our-services.jpg"
 };
 
 export const INITIAL_GALLERY_IMAGES: GalleryImage[] = [
@@ -100,7 +100,7 @@ export const SERVICES_DATA: Service[] = [
       "Ritual coordination (Pind Daan, Abhishek)",
       "Accompanied by spiritual guides"
     ],
-    "image": "components\\images\\piligrimage-tours.jpg",
+    "image": "images\\piligrimage-tours.jpg",
     "icon": "Landmark"
   },
   {
@@ -114,7 +114,7 @@ export const SERVICES_DATA: Service[] = [
       "Indian Meals availability",
       "English-speaking local guides"
     ],
-    "image": "components\\images\\international-tours.jpg",
+    "image": "images\\international-tours.jpg",
     "icon": "Globe"
   },
   {
@@ -128,7 +128,7 @@ export const SERVICES_DATA: Service[] = [
       "Special care for elderly & children",
       "Group discounts available"
     ],
-    "image": "components\\images\\customized-tours.jpg",
+    "image": "images\\customized-tours.jpg",
     "icon": "Users"
   },
   {
@@ -142,7 +142,7 @@ export const SERVICES_DATA: Service[] = [
       "Hygienic food & amenities",
       "Proximity to temples & ghats"
     ],
-    "image": "components\\images\\primium-hotels.jpg",
+    "image": "images\\primium-hotels.jpg",
     "icon": "BedDouble"
   },
   {
@@ -156,7 +156,7 @@ export const SERVICES_DATA: Service[] = [
       "Airport/Station Transfers",
       "24/7 Transport availability"
     ],
-    "image": "components\\images\\car-tempo.jpg",
+    "image": "images\\car-tempo.jpg",
     "icon": "Bus"
   },
   {
@@ -170,7 +170,7 @@ export const SERVICES_DATA: Service[] = [
       "Deep cultural & historical insights",
       "24/7 On-call assistance"
     ],
-    "image": "components\\images\\profestional-guiding.jpg",
+    "image": "images\\profestional-guiding.jpg",
     "icon": "UserCheck"
   }
 ];
