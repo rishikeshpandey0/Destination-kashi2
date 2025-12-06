@@ -72,6 +72,42 @@ export const INITIAL_GALLERY_IMAGES: GalleryImage[] = [
     "src": "https://sannidhi.net/wp-content/uploads/2023/05/Kaal_bhairav_kashi0.png",
     "alt": "Shree Kaal Bhairav Mandir",
     "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765008701813",
+    "src": "images\\CHAR DHAM.png",
+    "alt": "Char dham",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765008762429",
+    "src": "images\\GOA.png",
+    "alt": "Goa",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765008830764",
+    "src": "images\\kedarrrr.png",
+    "alt": "kedarnath",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765008897558",
+    "src": "images\\LASKHADWEEP.png",
+    "alt": "Lakshadeep",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765009123612",
+    "src": "images\\SINGAPORE.png",
+    "alt": "Singapur",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765009196940",
+    "src": "images\\THE-BUDDIST-CIRCUIT.png",
+    "alt": "THE BUDDIST CIRCUIT",
+    "span": "col-span-1 row-span-2"
   }
 ];
 
