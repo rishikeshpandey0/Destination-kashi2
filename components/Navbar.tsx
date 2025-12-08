@@ -61,8 +61,8 @@ const Navbar: React.FC = () => {
             </div>
             <div className="flex items-center space-x-5">
                  <div className="flex space-x-4 pr-5 border-r border-gray-700">
-                    <a href="#" className="text-gray-400 hover:text-brand-gold transition-colors"><Facebook size={12} /></a>
-                    <a href="#" className="text-gray-400 hover:text-brand-gold transition-colors"><Instagram size={12} /></a>
+                    <a href={contactInfo.facebook || "#"} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-gold transition-colors"><Facebook size={12} /></a>
+                    <a href={contactInfo.instagram || "#"} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-gold transition-colors"><Instagram size={12} /></a>
                     <a href="#" className="text-gray-400 hover:text-brand-gold transition-colors"><Twitter size={12} /></a>
                  </div>
                  {isAuthenticated && (

@@ -47,6 +47,8 @@ export interface ContactInfo {
   email: string;
   address: string;
   mapUrl: string;
+  facebook: string;
+  instagram: string;
 }
 
 export interface FAQ {
@@ -55,6 +57,7 @@ export interface FAQ {
 }
 
 export interface Service {
+  
   id: string;
   title: string;
   description: string;

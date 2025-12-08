@@ -13,7 +13,9 @@ export const CONTACT_INFO = {
   "whatsapp": "+91 96518 18442",
   "email": "destinationstourvns@gmail.com",
   "address": "Vinayak Plaza, Fatman Road, Maldahiya, Chetganj, Varanasi, Uttar Pradesh, India - 221001",
-  "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.567087826356!2d82.9897!3d25.3330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709123456789!5m2!1sen!2sin"
+  "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.567087826356!2d82.9897!3d25.3330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709123456789!5m2!1sen!2sin",
+  "facebook": "https://www.facebook.com/share/17Lq6zSGB6/",
+  "instagram": "https://www.instagram.com/destinationkashi?igsh=MWRxcTJvY3lkbHhucw=="
 };
 
 export const NAV_LINKS: NavLink[] = [
@@ -74,39 +76,213 @@ export const INITIAL_GALLERY_IMAGES: GalleryImage[] = [
     "span": "col-span-1 row-span-1"
   },
   {
-    "id": "1765008701813",
-    "src": "images\\CHAR DHAM.png",
-    "alt": "Char dham",
+    "id": "1765185363063",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg/960px-Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg?20240122115543",
+    "alt": "Ayodhya ram temple",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765185469102",
+    "src": "https://media.cnn.com/api/v1/images/stellar/prod/240123131600-09-ayodhya-temple-india.jpg?c=original",
+    "alt": "Ayodhya ram temple nights view",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765185636079",
+    "src": "https://m.media-amazon.com/images/I/81udiGg5Q2L.jpg",
+    "alt": "Ayodhya lord ram picture",
     "span": "col-span-1 row-span-2"
   },
   {
-    "id": "1765008762429",
-    "src": "images\\GOA.png",
-    "alt": "Goa",
+    "id": "1765186001832",
+    "src": "https://travelleemsps.com/wp-content/uploads/2025/12/hanuman-garhi-temple-ayodhya-darshan-timings.jpg",
+    "alt": "Hanuman garhi temple ayodhya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765186149126",
+    "src": "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/m_Ayodhya_Hanuman_garhi_fort_1_l_468_640.jpg",
+    "alt": "Hanuman garhi fort",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765186317550",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBOrfpYP2enNImmMYmXB5T8pRkwZK5nM1kQ&s",
+    "alt": "Kanak bhawan ayodhya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765186553918",
+    "src": "https://www.travelbaits.in/wp-content/uploads/2025/11/Dashrath-Mahal_01-1200x675-cropped.jpg",
+    "alt": "Dashrath Mahal ayodhya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765186809456",
+    "src": "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/05/92d6622dc6e8d331d56c7e1e403c12fd_1000x1000.jpg",
+    "alt": "Shri Nageshwarnath Temple",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765187787765",
+    "src": "https://www.divyahimachal.com/wp-content/uploads/2024/02/3as4-1-copy.jpg",
+    "alt": "Treta-ke-Thakur ayodhaya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765188070030",
+    "src": "https://imgs.etvbharat.com/etvbharat/prod-images/08-07-2025/up-ayo-01-parvat-visbyte-10180_08072025154809_0807f_1751969889_659.jpg",
+    "alt": "Mani Parvat ayodhya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765188501613",
+    "src": "https://static.newstrack.com/uploads/images/2023/08/image_800x450_64db9f2823485.jpg",
+    "alt": "lete hanuman prayagraj",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765188608788",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6q66PKq3ndWxNEHNnTz-zb7KbZe666usctQ&s",
+    "alt": "Narayani Ashram ayodhya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765189076885",
+    "src": "https://www.srimandir.com/_next/image?url=https%3A%2F%2Fsrm-cdn.a4b.io%2Fcontent%2Ftemple%2Fimages%2F7f0743d1-7ce4-431e-ac43-69f821a49027.png&w=3840&q=100",
+    "alt": "Kalyani devi temple",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765189226044",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROru-dzs9AchmYVTjrURxwWcFq6nynf8iPmA&s",
+    "alt": "Shankar Viman Mandapam prayagraj",
     "span": "col-span-1 row-span-2"
   },
   {
-    "id": "1765008830764",
-    "src": "images\\kedarrrr.png",
-    "alt": "kedarnath",
+    "id": "1765190875042",
+    "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/23/4f/fc/new-yamuna-bridge.jpg?w=900&h=500&s=1",
+    "alt": "Amuna bridge",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765190950793",
+    "src": "https://www.travelworldplanet.com/wp-content/uploads/2018/11/Someshwar-Mahadev-Temple-Allahabad.jpg",
+    "alt": "Someshwar Mahadev Temple",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765191133593",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZBDc1tP_exR_kyGedRhYi2cohoRTvmS25g&s",
+    "alt": "Triveni sangam prayagraj",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765191254945",
+    "src": "https://optimatravels.com/images/allahabad-images/nag-vasuki-temple-prayagraj.jpg",
+    "alt": "Naag Vasuki Temple prayagraj",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765191486688",
+    "src": "https://www.pinddaangaya.bihar.gov.in/images/extra/vishnupad_1.jpeg",
+    "alt": "vishnupad temple gaya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765191677042",
+    "src": "https://s7ap1.scene7.com/is/image/incredibleindia/A-Spiritual-Travel-Guide-to-Gaya-1-popular?qlt=82&ts=1726740883825",
+    "alt": "mangla gauri temple gaya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765191789680",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7YOO86BDnWLt3_3aNEXS0CSNlfHFD0XNzzA&s",
+    "alt": "Pind daan ghat gaya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765191981960",
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe4QdnQN1snxG2BGJbRoA3gdoSz67G9QDcWw&s",
+    "alt": "mahabodhi temple bodh gaya",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765192158377",
+    "src": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/12/shutterstock_402120757-1.webp",
+    "alt": "great buddha status bodh gaya ",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765192568408",
+    "src": "images/kedarrrr.png",
+    "alt": "kedarnath dham",
     "span": "col-span-1 row-span-2"
   },
   {
-    "id": "1765008897558",
-    "src": "images\\LASKHADWEEP.png",
-    "alt": "Lakshadeep",
+    "id": "1765192660521",
+    "src": "images/CHAR DHAM.png",
+    "alt": "Char dham yatra",
     "span": "col-span-1 row-span-2"
   },
   {
-    "id": "1765009123612",
-    "src": "images\\SINGAPORE.png",
-    "alt": "Singapur",
+    "id": "1765192697416",
+    "src": "images/GOA.png",
+    "alt": "Goa trips",
     "span": "col-span-1 row-span-2"
   },
   {
-    "id": "1765009196940",
-    "src": "images\\THE-BUDDIST-CIRCUIT.png",
-    "alt": "THE BUDDIST CIRCUIT",
+    "id": "1765192823575",
+    "src": "images/LASKHADWEEP.png",
+    "alt": "lakshadeep  trip",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765192869903",
+    "src": "images/THE-BUDDIST-CIRCUIT.png",
+    "alt": "THE-BUDDIST-CIRCUIT",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765192945375",
+    "src": "images/SINGAPORE.png",
+    "alt": "SINGAPORE TRIP",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765193461263",
+    "src": "images/template1.jpg",
+    "alt": "Gallery Image",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765193492504",
+    "src": "images/template2.jpg",
+    "alt": "Gallery Image",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765193519951",
+    "src": "images/template3.jpg",
+    "alt": "Gallery Image",
+    "span": "col-span-1 row-span-1"
+  },
+  {
+    "id": "1765193650825",
+    "src": "images/template4.jpg",
+    "alt": "Gallery Image",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765193695663",
+    "src": "images/template5.jpg",
+    "alt": "Gallery Image",
+    "span": "col-span-1 row-span-2"
+  },
+  {
+    "id": "1765193764935",
+    "src": "images/template6.jpg",
+    "alt": "Gallery Image",
     "span": "col-span-1 row-span-2"
   }
 ];
@@ -217,12 +393,13 @@ export const PACKAGES: TourPackage[] = [
     "title": "Divine Varanasi Experience",
     "location": "Varanasi",
     "duration": "3 Days / 2 Nights",
-    "price": "₹13,500",
+    "price": "₹9,500",
     "image": "https://images.unsplash.com/photo-1561359313-0639aad49ca6?q=80&w=800&auto=format&fit=crop",
     "description": "Experience the spiritual capital of India with morning boat rides and evening Aarti.",
     "highlights": [
       "Ganga Aarti",
       "Kashi Vishwanath Temple",
+      "Kaal bhairav temple",
       "Sarnath Tour"
     ]
   },
@@ -231,7 +408,7 @@ export const PACKAGES: TourPackage[] = [
     "title": "Ayodhya Ram Janmabhoomi",
     "location": "Ayodhya",
     "duration": "2 Days / 1 Night",
-    "price": "₹7,500",
+    "price": "₹5,500",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg/640px-Ram_Janmbhoomi_Mandir%2C_Ayodhya_Dham.jpg",
     "description": "Visit the sacred birthplace of Lord Rama and witness the grandeur of the new temple.",
     "highlights": [
@@ -259,7 +436,7 @@ export const PACKAGES: TourPackage[] = [
     "title": "Gaya Pind Daan Special",
     "location": "Gaya",
     "duration": "2 Days / 1 Night",
-    "price": "₹9,500",
+    "price": "₹6,500",
     "image": "https://images.herzindagi.info/image/2020/Sep/gaya-district-in-bihar-to-visit.jpg",
     "description": "Perform ancestral rituals with our guided and hassle-free services in Gaya.",
     "highlights": [
@@ -273,7 +450,7 @@ export const PACKAGES: TourPackage[] = [
     "title": "Complete Spiritual Circuit",
     "location": "Varanasi",
     "duration": "6 Days / 5 Nights",
-    "price": "₹28,500",
+    "price": "₹23,500",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRcGZ5YOz8qBcJUS6oaD0SM_JYo600LdavLA&s",
     "description": "The ultimate pilgrimage covering Varanasi, Ayodhya, Prayagraj, and Gaya.",
     "highlights": [

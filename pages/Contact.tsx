@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../components/ui/Button';
-import { Mail, Phone, MapPin, Send, Plus, Minus, MessageCircle, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Plus, Minus, MessageCircle, CheckCircle, Facebook, Instagram, Share2 } from 'lucide-react';
 import { useData } from '../context/DataContext';
 
 const Contact: React.FC = () => {
@@ -177,6 +177,34 @@ ${message}`;
                     <p className="text-gray-600">
                         <a href={`mailto:${contactInfo.email}`} className="hover:text-brand-gold transition-colors">{contactInfo.email}</a>
                     </p>
+                  </div>
+               </div>
+               
+               {/* Social Media Links */}
+               <div className="flex items-start">
+                  <div className="bg-brand-blue/10 p-4 rounded-full mr-6">
+                    <Share2 className="text-brand-blue w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-brand-dark mb-3">Follow Us</h4>
+                    <div className="flex gap-4">
+                        <a 
+                            href={contactInfo.facebook || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-gray-600 hover:text-[#1877F2] transition-colors font-medium"
+                        >
+                            <Facebook size={20} /> Facebook
+                        </a>
+                        <a 
+                            href={contactInfo.instagram || "#"} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-gray-600 hover:text-[#E4405F] transition-colors font-medium"
+                        >
+                            <Instagram size={20} /> Instagram
+                        </a>
+                    </div>
                   </div>
                </div>
             </div>

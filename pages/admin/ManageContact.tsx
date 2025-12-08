@@ -99,6 +99,31 @@ const ManageContact: React.FC = () => {
                     />
                 </div>
 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Facebook URL</label>
+                        <input 
+                            type="text" 
+                            name="facebook"
+                            value={formData.facebook || ''}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none" 
+                            placeholder="https://facebook.com/..."
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Instagram URL</label>
+                        <input 
+                            type="text" 
+                            name="instagram"
+                            value={formData.instagram || ''}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none" 
+                            placeholder="https://instagram.com/..."
+                        />
+                    </div>
+                </div>
+
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Physical Address</label>
                     <textarea 
