@@ -401,7 +401,8 @@ export const PACKAGES: TourPackage[] = [
       "Kashi Vishwanath Temple",
       "Kaal bhairav temple",
       "Sarnath Tour"
-    ]
+    ],
+    "priceUnit": "/ person / for 2 person"
   },
   {
     "id": "2",
@@ -415,7 +416,8 @@ export const PACKAGES: TourPackage[] = [
       "Ram Mandir",
       "Hanuman Garhi",
       "Saryu River Ghats"
-    ]
+    ],
+    "priceUnit": "/ person /for 2 person"
   },
   {
     "id": "3",
@@ -429,7 +431,8 @@ export const PACKAGES: TourPackage[] = [
       "Triveni Sangam",
       "Anand Bhavan",
       "Hanuman Temple"
-    ]
+    ],
+    "priceUnit": "/ person /for 2 person"
   },
   {
     "id": "4",
@@ -443,7 +446,8 @@ export const PACKAGES: TourPackage[] = [
       "Vishnupad Temple",
       "Bodhgaya Visit",
       "Pind Daan Ceremony"
-    ]
+    ],
+    "priceUnit": "/ person /for 2 person"
   },
   {
     "id": "5",
@@ -457,6 +461,92 @@ export const PACKAGES: TourPackage[] = [
       "All Major Temples",
       "Luxury Transport",
       "Guided Tours"
+    ],
+    "priceUnit": "/ person /for 2 person"
+  },
+  {
+    "id": "1765196388134",
+    "title": "packages for manali",
+    "location": "manali",
+    "duration": "3 Days / 2 Nights",
+    "price": "7,800",
+    "priceUnit": "/ person /for 2 person",
+    "image": "https://www.mytownblog.com/wp-content/uploads/2024/10/Best-Places-to-Visit-in-Manali.png",
+    "description": "Manali, nestled in the Himalayas, offers breathtaking views, adventure activities, and a serene escape. Ideal for nature lovers, adventure seekers, and honeymooners, this tour showcases the beauty of ...\nSource: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages",
+    "highlights": [
+      "Enjoy adventure sports like paragliding, skiing, and river rafting.",
+      "Trek to nearby villages and scenic spots.",
+      "Visit the Manu Temple and other religious sites.",
+      "Explore the local markets for handicrafts...",
+      "Source: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages"
+    ]
+  },
+  {
+    "id": "1765196756307",
+    "title": "Packages For Goa",
+    "location": "Goa",
+    "duration": "3 Days / 2 Nights",
+    "price": "8,000",
+    "priceUnit": "/ person /for 2 person",
+    "image": "https://janakitours.com/wp-content/uploads/2025/01/Goa.png",
+    "description": "Goa, located on the western coast of India, is renowned for its beautiful beaches, vibrant culture, and rich colonial history.",
+    "highlights": [
+      "Relax on the pristine beaches",
+      "Explore Portuguese heritage and colonial architecture",
+      "Indulge in water sports like parasailing and jet skiing",
+      "Enjoy vibrant beach parties and nightlife",
+      "Visit spice planta...",
+      "Source: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages"
+    ]
+  },
+  {
+    "id": "1765196939355",
+    "title": "Packages For Darjeeling",
+    "location": "Darjeeling",
+    "duration": "3 Days / 2 Nights",
+    "price": "8,600",
+    "priceUnit": "/ person / for 2 person",
+    "image": "https://www.sterlingholidays.com/blog/wp-content/uploads/2024/12/Darjeeling-Winter-Campaign-Blog.jpg",
+    "description": "Darjeeling, the \"Queen of the Hills,\" offers breathtaking views of the Himalayas, lush tea gardens, and a serene atmosphere. Ideal for nature lovers, honeymooners, and those seeking a peaceful getaway...",
+    "highlights": [
+      "Enjoy a ride on the Darjeeling Himalayan Railway (Toy Train)",
+      "Visit a tea estate and learn about tea processing",
+      "Witness the sunrise from Tiger Hill",
+      "Explore the local markets for handicrafts and souveni...",
+      "Source: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages"
+    ]
+  },
+  {
+    "id": "1765197302859",
+    "title": "Packages For Ladakh",
+    "location": "Ladakh",
+    "duration": "3 Days / 2 Nights",
+    "price": "23,000",
+    "priceUnit": "/ person / for 2 person",
+    "image": "https://montaxe.com/wp-content/uploads/2024/04/Ladakh-Tourism.webp",
+    "description": "Ladakh, the land of high passes, offers a breathtaking journey through rugged mountains, pristine lakes, and ancient monasteries. Ideal for adventure seekers, nature lovers, and spiritual explorers",
+    "highlights": [
+      "Visit ancient monasteries like Hemis, Thiksey, and Alchi",
+      "Enjoy white water rafting in the Zanskar River",
+      "Trek to remote villages and high-altitude passes",
+      "Stargaze in the clear night sky",
+      "Experience the ..."
+    ]
+  },
+  {
+    "id": "1765197575569",
+    "title": "Packages For Kedarnath dham",
+    "location": "Kedarnath dham ",
+    "duration": "2 Days / 1 Night",
+    "price": "14,000",
+    "priceUnit": "/ person / for 2 person",
+    "image": "image/kedarrrr.png",
+    "description": "Embark on a spiritual journey to Kedarnath, one of the holiest shrines dedicated to Lord Shiva, nestled in the majestic Himalayas. This pilgrimage is ideal for devotees and adventure seekers looking ",
+    "highlights": [
+      "Attend the morning and evening prayers at Kedarnath Temple",
+      "Trek to Vasuki Tal, a serene lake known for its pristine beauty",
+      "Visit the Bhairavnath Temple for panoramic views of the valley",
+      "Explore the lo..."
     ]
   }
 ];

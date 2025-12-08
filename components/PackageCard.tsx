@@ -57,7 +57,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg }) => {
           <div>
             <span className="text-xs text-gray-500 block uppercase tracking-wide">Starting From</span>
             <span className="text-2xl font-bold text-brand-blue">{pkg.price}</span>
-            <span className="text-xs text-gray-400"> / person</span>
+            <span className="text-xs text-gray-400"> {pkg.priceUnit || '/ person'}</span>
           </div>
           <Link to="/contact">
             <Button variant="outline" size="sm">Book Now</Button>

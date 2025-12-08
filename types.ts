@@ -1,9 +1,10 @@
 export interface TourPackage {
   id: string;
   title: string;
-  location: 'Varanasi' | 'Ayodhya' | 'Prayagraj' | 'Gaya';
+  location: string; // Changed to string to support "Varanasi, Ayodhya" etc.
   duration: string;
   price: string;
+  priceUnit: string; // New field for '/ person', '/ couple', etc.
   image: string;
   description: string;
   highlights: string[];
@@ -57,7 +58,6 @@ export interface FAQ {
 }
 
 export interface Service {
-  
   id: string;
   title: string;
   description: string;

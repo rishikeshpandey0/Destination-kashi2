@@ -6,9 +6,11 @@ const Packages: React.FC = () => {
   const [filter, setFilter] = useState<'All' | 'Varanasi' | 'Ayodhya' | 'Prayagraj' | 'Gaya'>('All');
   const { packages } = useData();
 
+  // Updated filter logic: Check if the package location string INCLUDES the filter
+  // This allows "Varanasi, Ayodhya" package to show up when filtering for "Varanasi"
   const filteredPackages = filter === 'All' 
     ? packages 
-    : packages.filter(p => p.location === filter);
+    : packages.filter(p => p.location.includes(filter));
 
   return (
     <div className="pt-24 pb-20 min-h-screen bg-slate-50">

@@ -18,12 +18,15 @@ const PackageForm: React.FC = () => {
     location: 'Varanasi',
     duration: '',
     price: '',
+    priceUnit: '/ person',
     image: '',
     description: '',
     highlights: []
   });
 
   const [highlightsText, setHighlightsText] = useState('');
+  
+  const AVAILABLE_LOCATIONS = ['Varanasi', 'Ayodhya', 'Prayagraj', 'Gaya', 'Chitrakoot'];
 
   useEffect(() => {
     if (isEdit && id) {
@@ -38,6 +41,18 @@ const PackageForm: React.FC = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const toggleLocation = (loc: string) => {
+    let currentLocs = formData.location ? formData.location.split(', ').filter(l => l.trim() !== '') : [];
+    
+    if (currentLocs.includes(loc)) {
+        currentLocs = currentLocs.filter(l => l !== loc);
+    } else {
+        currentLocs.push(loc);
+    }
+    
+    setFormData(prev => ({ ...prev, location: currentLocs.join(', ') }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -91,18 +106,37 @@ const PackageForm: React.FC = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">Location</label>
-                        <select 
-                            name="location"
-                            value={formData.location}
-                            onChange={handleChange}
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none"
-                        >
-                            <option value="Varanasi">Varanasi</option>
-                            <option value="Ayodhya">Ayodhya</option>
-                            <option value="Prayagraj">Prayagraj</option>
-                            <option value="Gaya">Gaya</option>
-                        </select>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Locations (Select Multiple)</label>
+                        <div className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white">
+                            <div className="flex flex-wrap gap-3">
+                                {AVAILABLE_LOCATIONS.map(loc => {
+                                    const isSelected = formData.location.includes(loc);
+                                    return (
+                                        <button
+                                            type="button"
+                                            key={loc}
+                                            onClick={() => toggleLocation(loc)}
+                                            className={`px-3 py-1 rounded-full text-xs font-bold transition-colors border ${
+                                                isSelected 
+                                                ? 'bg-brand-gold text-white border-brand-gold' 
+                                                : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100'
+                                            }`}
+                                        >
+                                            {loc} {isSelected && '✓'}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                            <input 
+                                type="text"
+                                name="location"
+                                value={formData.location}
+                                onChange={handleChange}
+                                placeholder="Or type manually..."
+                                className="w-full mt-3 text-sm text-gray-600 outline-none border-t border-gray-100 pt-2"
+                            />
+                        </div>
+                        <p className="text-xs text-gray-400 mt-1">Click to select, or type manually for combos.</p>
                     </div>
                 </div>
 
@@ -119,18 +153,38 @@ const PackageForm: React.FC = () => {
                             placeholder="e.g. 3 Days / 2 Nights"
                         />
                     </div>
-                    <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">Price</label>
-                        <input 
-                            type="text" 
-                            name="price"
-                            value={formData.price}
-                            onChange={handleChange}
-                            required
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none" 
-                            placeholder="e.g. ₹13,500"
-                        />
+                    <div className="flex gap-4">
+                        <div className="flex-1">
+                            <label className="block text-sm font-medium text-gray-700 mb-2">Price</label>
+                            <input 
+                                type="text" 
+                                name="price"
+                                value={formData.price}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none" 
+                                placeholder="e.g. ₹13,500"
+                            />
+                        </div>
+                        <div className="w-1/3">
+                            <label className="block text-sm font-medium text-gray-700 mb-2">Unit</label>
+                            <input 
+                                type="text" 
+                                name="priceUnit"
+                                value={formData.priceUnit}
+                                onChange={handleChange}
+                                required
+                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none" 
+                                placeholder="/ person"
+                            />
+                        </div>
                     </div>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                    <p className="text-sm text-blue-800">
+                        <strong>Tip:</strong> If using a local image, place it in the <code>public/images</code> folder and use path <code>images/filename.jpg</code>
+                    </p>
                 </div>
 
                 <div>
@@ -144,7 +198,6 @@ const PackageForm: React.FC = () => {
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-gold outline-none" 
                         placeholder="https://..."
                     />
-                    <p className="text-xs text-gray-400 mt-1">Paste a link to an image (Unsplash, etc.)</p>
                 </div>
 
                 <div>
