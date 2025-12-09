@@ -401,8 +401,7 @@ export const PACKAGES: TourPackage[] = [
       "Kashi Vishwanath Temple",
       "Kaal bhairav temple",
       "Sarnath Tour"
-    ],
-    "priceUnit": "/ person / for 2 person"
+    ]
   },
   {
     "id": "2",
@@ -416,8 +415,7 @@ export const PACKAGES: TourPackage[] = [
       "Ram Mandir",
       "Hanuman Garhi",
       "Saryu River Ghats"
-    ],
-    "priceUnit": "/ person /for 2 person"
+    ]
   },
   {
     "id": "3",
@@ -431,8 +429,7 @@ export const PACKAGES: TourPackage[] = [
       "Triveni Sangam",
       "Anand Bhavan",
       "Hanuman Temple"
-    ],
-    "priceUnit": "/ person /for 2 person"
+    ]
   },
   {
     "id": "4",
@@ -446,8 +443,7 @@ export const PACKAGES: TourPackage[] = [
       "Vishnupad Temple",
       "Bodhgaya Visit",
       "Pind Daan Ceremony"
-    ],
-    "priceUnit": "/ person /for 2 person"
+    ]
   },
   {
     "id": "5",
@@ -461,63 +457,59 @@ export const PACKAGES: TourPackage[] = [
       "All Major Temples",
       "Luxury Transport",
       "Guided Tours"
-    ],
-    "priceUnit": "/ person /for 2 person"
+    ]
   },
   {
-    "id": "1765196388134",
-    "title": "packages for manali",
+    "id": "1765276359523",
+    "title": "Packages For Manali",
     "location": "manali",
     "duration": "3 Days / 2 Nights",
     "price": "7,800",
-    "priceUnit": "/ person /for 2 person",
+    "priceUnit": "/ person / for 2 person",
     "image": "https://www.mytownblog.com/wp-content/uploads/2024/10/Best-Places-to-Visit-in-Manali.png",
-    "description": "Manali, nestled in the Himalayas, offers breathtaking views, adventure activities, and a serene escape. Ideal for nature lovers, adventure seekers, and honeymooners, this tour showcases the beauty of ...\nSource: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages",
+    "description": "Manali, nestled in the Himalayas, offers breathtaking views, adventure activities, and a serene escape. Ideal for nature lovers, adventure seekers, and honeymooners, this tour showcases the beauty of nature",
     "highlights": [
       "Enjoy adventure sports like paragliding, skiing, and river rafting.",
       "Trek to nearby villages and scenic spots.",
       "Visit the Manu Temple and other religious sites.",
-      "Explore the local markets for handicrafts...",
-      "Source: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages"
+      "Explore the local markets for handicrafts..."
     ]
   },
   {
-    "id": "1765196756307",
+    "id": "1765276608881",
     "title": "Packages For Goa",
     "location": "Goa",
     "duration": "3 Days / 2 Nights",
-    "price": "8,000",
-    "priceUnit": "/ person /for 2 person",
-    "image": "https://janakitours.com/wp-content/uploads/2025/01/Goa.png",
+    "price": "7,700",
+    "priceUnit": "/ person / for 2 person",
+    "image": "https://www.sushanttravels.com/blog/2019/12/1576592415.jpg",
     "description": "Goa, located on the western coast of India, is renowned for its beautiful beaches, vibrant culture, and rich colonial history.",
     "highlights": [
       "Relax on the pristine beaches",
       "Explore Portuguese heritage and colonial architecture",
       "Indulge in water sports like parasailing and jet skiing",
       "Enjoy vibrant beach parties and nightlife",
-      "Visit spice planta...",
-      "Source: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages"
+      "Visit spice planta..."
     ]
   },
   {
-    "id": "1765196939355",
+    "id": "1765276768248",
     "title": "Packages For Darjeeling",
     "location": "Darjeeling",
     "duration": "3 Days / 2 Nights",
     "price": "8,600",
     "priceUnit": "/ person / for 2 person",
-    "image": "https://www.sterlingholidays.com/blog/wp-content/uploads/2024/12/Darjeeling-Winter-Campaign-Blog.jpg",
+    "image": "https://trekinsikkim.in/_next/image?url=https%3A%2F%2Fupload.trekinsikkim.in%2Fuploads%2Fmedia-gallery%2Ffiles-1748685567719-977695027&w=3840&q=75",
     "description": "Darjeeling, the \"Queen of the Hills,\" offers breathtaking views of the Himalayas, lush tea gardens, and a serene atmosphere. Ideal for nature lovers, honeymooners, and those seeking a peaceful getaway...",
     "highlights": [
       "Enjoy a ride on the Darjeeling Himalayan Railway (Toy Train)",
       "Visit a tea estate and learn about tea processing",
       "Witness the sunrise from Tiger Hill",
-      "Explore the local markets for handicrafts and souveni...",
-      "Source: Justdial.com – Read more at: https://www.justdial.com/Varanasi/Destination-Kashi-Tours-Travels-Maldahiya/0542PX542-X542-240925005215-A7X5_BZDET/service-catalog-holiday-tour-packages"
+      "Explore the local markets for handicrafts and souveni..."
     ]
   },
   {
-    "id": "1765197302859",
+    "id": "1765277031867",
     "title": "Packages For Ladakh",
     "location": "Ladakh",
     "duration": "3 Days / 2 Nights",
@@ -534,47 +526,120 @@ export const PACKAGES: TourPackage[] = [
     ]
   },
   {
-    "id": "1765197575569",
-    "title": "Packages For Kedarnath dham",
-    "location": "Kedarnath dham ",
-    "duration": "2 Days / 1 Night",
+    "id": "1765277326528",
+    "title": "Packages For Kedarnath",
+    "location": "kedarnath dham",
+    "duration": "3 Days / 2 Nights",
     "price": "14,000",
     "priceUnit": "/ person / for 2 person",
-    "image": "image/kedarrrr.png",
-    "description": "Embark on a spiritual journey to Kedarnath, one of the holiest shrines dedicated to Lord Shiva, nestled in the majestic Himalayas. This pilgrimage is ideal for devotees and adventure seekers looking ",
+    "image": "images/kedarrrr.png",
+    "description": "Embark on a spiritual journey to Kedarnath, one of the holiest shrines dedicated to Lord Shiva, nestled in the majestic Himalayas. This pilgrimage is ideal for devotees and adventure seekers looking",
     "highlights": [
       "Attend the morning and evening prayers at Kedarnath Temple",
       "Trek to Vasuki Tal, a serene lake known for its pristine beauty",
       "Visit the Bhairavnath Temple for panoramic views of the valley",
       "Explore the lo..."
     ]
+  },
+  {
+    "id": "1765277568160",
+    "title": "Packages For Lakshadweep",
+    "location": "Lakshadweep",
+    "duration": "3 Days / 2 Nights",
+    "price": "21,500",
+    "priceUnit": "/ person / for 2 person",
+    "image": "images/LASKHADWEEP.png",
+    "description": "Lakshadweep, India's tropical archipelago, offers pristine beaches, vibrant coral reefs, and serene lagoons. Ideal for beach lovers, adventure seekers, and those looking for tranquility, this tour",
+    "highlights": [
+      "Scuba diving and snorkeling in the coral reefs",
+      "Enjoy water sports like kayaking, windsurfing, and sailing",
+      "Relax on the pristine beaches and soak up the sun",
+      "Explore the local culture and cuisine"
+    ]
+  },
+  {
+    "id": "1765277763040",
+    "title": "Chitrakoot Dham",
+    "location": "Chitrakoot",
+    "duration": "3 Days / 2 Nights",
+    "price": "9,400",
+    "priceUnit": "/ person / for 2 person",
+    "image": "https://seawatersports.com/images/places/chitrakoot.jpg",
+    "description": "Chitrakoot Tourism 2 Nights 3 Days will take you to a few of the best places to visit in Chitrakoot. With this Chitrakoot Tour Package spread over 5 days, you will get to visit the prominent tourist places in Chitrakoot. Chitrakoot is famous for pilgrimage places. Click on Book Now to explore More!!",
+    "highlights": [
+      "Accommodation in Selected Hotel",
+      "All State Taxes, Toll Taxes, Paring fees and Driver Charges",
+      "Break Fast and Dinner",
+      "Sightseeing as per Itinerary",
+      "Transportation in Selected Mode of Transport"
+    ]
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    "id": "1",
-    "name": "Rajesh Kumar",
-    "location": "Mumbai, India",
-    "comment": "An absolutely divine experience. The arrangements in Varanasi were top-notch. Highly recommended!",
+    "id": "1765272894381",
+    "name": "Rajesh kumar",
+    "location": "prayagraj",
+    "comment": "An absolutely divine experience. The arrangements in Varanasi were top-notch. Highly recommended",
     "rating": 5,
-    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
+    "avatar": "https://i.pinimg.com/564x/54/95/07/549507b290b7b3ee0626e5710a354f39.jpg"
   },
   {
-    "id": "2",
-    "name": "Sarah Jenkins",
-    "location": "London, UK",
-    "comment": "Destination Kashi made our trip to Ayodhya seamless. The guide was very knowledgeable.",
-    "rating": 5,
-    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop"
-  },
-  {
-    "id": "3",
-    "name": "Amitabh Verma",
-    "location": "Delhi, India",
-    "comment": "Professional service. The hotels selected were clean and close to the temples.",
+    "id": "1765273082690",
+    "name": "vivek singh",
+    "location": "gaya",
+    "comment": "Destination Kashi made our trip to Ayodhya seamless. The guide was very knowledgeable",
     "rating": 4,
-    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop"
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHOqSGRmj_SeRuzMpVCHbYeBtLAYKJmk3Vg&s"
+  },
+  {
+    "id": "1765273229387",
+    "name": "abhinandan singh",
+    "location": "mathura",
+    "comment": "Professional service. The hotels selected were clean and close to the temples",
+    "rating": 5,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLX62ngGcKKfRDmHK2-kZ8ixUZvclXpE6XA&s"
+  },
+  {
+    "id": "1765273679251",
+    "name": "nitish sharma",
+    "location": "ayodhya",
+    "comment": "We made a Ladhak tour, India which arranged by Tour by Driver. We had the opportunity to meet several employees that went beyond their responsibility to make our trip great. To name a few, Raju, Chaman, Manu and the driver Ram were excellent. Most of the arranged places, hotels, and transportation were perfect.",
+    "rating": 5,
+    "avatar": "data:image/jpeg;base64,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"
+  },
+  {
+    "id": "1765274150212",
+    "name": "abhishek kumar",
+    "location": "lanka, varanasi",
+    "comment": "Our Footstep of Buddha Tour with Tour by Driver India was amazing. We visited Delhi, Agra, Sankasya, Lucknow, Varanasi, Bodhgaya, Rajgir, Nalanda, Vaishali, Kushinagar, Lumbini, Kapilvastu and Sravasti. We are group of 15 people from Japan for this Buddhist tour. Thank you to destination kashi tours & travels for beautiful travel plan. Tour by Driver is best travel company for Buddhism tour. Highly recommended.",
+    "rating": 5,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT4guKoKdMPW7mjBHXWI02RKiFnMrd6uu-ug&s"
+  },
+  {
+    "id": "1765274559296",
+    "name": "satyanand singh",
+    "location": "shamneghat, varanasi",
+    "comment": "Hi destination kashi tours & travels, We are still missing you. You have organized fantastic tour of north India with Rishikesh and Haridwar. Everything was very nice well organized. Especially we had very nice welcome and support by driver at the airport that helped us with everything! He was very helpful. From first day to 15th day he was 24/7 available to help us. We had never seen hospitality like this before.",
+    "rating": 5,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWEgVXJnWSJ-ml_E_C-xPGLlgAKPdfachug&s"
+  },
+  {
+    "id": "1765275139600",
+    "name": "jagdish keshari",
+    "location": "bhelupur, varanasi",
+    "comment": "Tour by destination kashi tours & travels are to be complemented for the hassle-free holiday that they arranged for us. We thoroughly enjoyed our holiday through the ayodhya and prayagraj provinces, and can honestly say that we did not encounter one single problem during our tours.\n\nI would highly recommend Tour By Driver for anyone wishing to arrange a safe and enjoyable holiday to enjoy the sights, smells, and tastes of India!!",
+    "rating": 5,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYF133CtxubzfApr2Y-jFT8qCWOrtpIMI6Hg&s"
+  },
+  {
+    "id": "1765275611740",
+    "name": "gautam tiwari",
+    "location": "pune, india",
+    "comment": "Going in a group tour with complete strangers can be challenging, but transforming travels and the group leader of the tour made their best efforts to bring in the group together and made this trip to remember for us.\nPlace is good to beat the regular congestion.\nStay was very comfortable and the host was very helpful and supportive in every possible way.",
+    "rating": 5,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwf0LT1ts58csSCr5N05qmTHMYStVvWmOXQ&s"
   }
 ];
 
