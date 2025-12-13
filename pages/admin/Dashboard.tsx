@@ -3,7 +3,7 @@ import { useData } from '../../context/DataContext';
 import { useAuth } from '../../context/AuthContext';
 import { Link } from 'react-router-dom';
 import Button from '../../components/ui/Button';
-import { Plus, Edit, Trash2, LogOut, RotateCcw, Image, Grid, Phone, MessageSquare, HelpCircle, Layers, Code } from 'lucide-react';
+import { Plus, Edit, Trash2, LogOut, RotateCcw, Image, Grid, Phone, MessageSquare, HelpCircle, Layers, Code, Bus } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
   const { packages, deletePackage, resetData } = useData();
@@ -74,6 +74,30 @@ const Dashboard: React.FC = () => {
                         <Layers size={20} />
                     </div>
                 </div>
+            </Link>
+
+            <Link to="/admin/manage-hotels" className="block">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex items-center justify-between group h-full">
+                <div>
+                  <h3 className="font-bold text-brand-dark text-lg">Manage Hotels</h3>
+                  <p className="text-gray-500 text-sm">Add / Edit premium hotels</p>
+                </div>
+                <div className="w-10 h-10 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <Plus size={20} />
+                </div>
+              </div>
+            </Link>
+
+            <Link to="/admin/manage-transports" className="block">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex items-center justify-between group h-full">
+                <div>
+                  <h3 className="font-bold text-brand-dark text-lg">Manage Transports</h3>
+                  <p className="text-gray-500 text-sm">Add / Edit vehicles</p>
+                </div>
+                <div className="w-10 h-10 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <Bus size={20} />
+                </div>
+              </div>
             </Link>
 
             <Link to="/admin/manage-gallery" className="block">

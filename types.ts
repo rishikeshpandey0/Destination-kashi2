@@ -66,3 +66,18 @@ export interface Service {
   image: string;
   icon: string; // Stored as string name of the icon
 }
+
+export interface Hotel {
+  id: string;
+  name: string;
+  location: string;
+  address?: string;
+  images: string[];
+  description?: string;
+}
+
+export interface Transport {
+  id: string;
+  name: string;
+  image: string;
+}

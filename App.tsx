@@ -10,6 +10,7 @@ import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
+import Hotels from './pages/Hotels';
 
 // Admin Imports
 import { AuthProvider } from './context/AuthContext';
@@ -18,14 +19,19 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import PackageForm from './pages/admin/PackageForm';
+import HotelForm from './pages/admin/HotelForm';
 import ManageImages from './pages/admin/ManageImages';
 import ManageGallery from './pages/admin/ManageGallery';
 import ManageContact from './pages/admin/ManageContact';
 import ManageTestimonials from './pages/admin/ManageTestimonials';
 import ManageFAQs from './pages/admin/ManageFAQs';
 import ManageServices from './pages/admin/ManageServices';
+import ManageHotels from './pages/admin/ManageHotels';
 import ServiceForm from './pages/admin/ServiceForm';
 import ExportData from './pages/admin/ExportData';
+import ManageTransports from './pages/admin/ManageTransports';
+import TransportForm from './pages/admin/TransportForm';
+import Transports from './pages/Transports';
 
 // Scroll to top helper
 const ScrollToTop = () => {
@@ -50,7 +56,9 @@ const App: React.FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/hotels" element={<Hotels />} />
                 <Route path="/services/:id" element={<ServiceDetail />} />
+                  <Route path="/transports" element={<Transports />} />
                 <Route path="/packages" element={<Packages />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/testimonials" element={<Testimonials />} />
@@ -81,6 +89,54 @@ const App: React.FC = () => {
                       <PackageForm />
                     </ProtectedRoute>
                   } 
+                />
+                <Route 
+                  path="/admin/hotel/new"
+                  element={
+                    <ProtectedRoute>
+                      <HotelForm />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route 
+                  path="/admin/hotel/edit/:id"
+                  element={
+                    <ProtectedRoute>
+                      <HotelForm />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route 
+                  path="/admin/manage-hotels"
+                  element={
+                    <ProtectedRoute>
+                      <ManageHotels />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route 
+                  path="/admin/manage-transports"
+                  element={
+                    <ProtectedRoute>
+                      <ManageTransports />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route 
+                  path="/admin/transport/new"
+                  element={
+                    <ProtectedRoute>
+                      <TransportForm />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route 
+                  path="/admin/transport/edit/:id"
+                  element={
+                    <ProtectedRoute>
+                      <TransportForm />
+                    </ProtectedRoute>
+                  }
                 />
                 <Route 
                   path="/admin/package/edit/:id" 

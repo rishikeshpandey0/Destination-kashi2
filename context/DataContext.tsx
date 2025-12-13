@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { TourPackage, SiteImages, GalleryImage, ContactInfo, Testimonial, FAQ, Service } from '../types';
+import { TourPackage, SiteImages, GalleryImage, ContactInfo, Testimonial, FAQ, Service, Hotel } from '../types';
 import { 
   PACKAGES as INITIAL_PACKAGES, 
   INITIAL_SITE_IMAGES, 
@@ -7,7 +7,9 @@ import {
   CONTACT_INFO as INITIAL_CONTACT_INFO,
   TESTIMONIALS as INITIAL_TESTIMONIALS,
   FAQ_DATA as INITIAL_FAQS,
-  SERVICES_DATA as INITIAL_SERVICES
+  SERVICES_DATA as INITIAL_SERVICES,
+  INITIAL_HOTELS
+  , INITIAL_TRANSPORTS
 } from '../constants';
 
 interface DataContextType {
@@ -18,6 +20,8 @@ interface DataContextType {
   testimonials: Testimonial[];
   faqs: FAQ[];
   services: Service[];
+  hotels: Hotel[];
+  transports: import('../types').Transport[];
   
   addPackage: (pkg: TourPackage) => void;
   updatePackage: (pkg: TourPackage) => void;
@@ -32,6 +36,12 @@ interface DataContextType {
   addFaq: (f: FAQ) => void;
   deleteFaq: (index: number) => void;
   updateService: (s: Service) => void;
+  addHotel: (h: Hotel) => void;
+  updateHotel: (h: Hotel) => void;
+  deleteHotel: (id: string) => void;
+  addTransport: (t: import('../types').Transport) => void;
+  updateTransport: (t: import('../types').Transport) => void;
+  deleteTransport: (id: string) => void;
 
   resetData: () => void;
 }
@@ -46,6 +56,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [testimonials, setTestimonials] = useState<Testimonial[]>(INITIAL_TESTIMONIALS);
   const [faqs, setFaqs] = useState<FAQ[]>(INITIAL_FAQS);
   const [services, setServices] = useState<Service[]>(INITIAL_SERVICES);
+  const [hotels, setHotels] = useState<Hotel[]>(INITIAL_HOTELS as Hotel[]);
+  const [transports, setTransports] = useState<import('../types').Transport[]>(INITIAL_TRANSPORTS as import('../types').Transport[]);
   
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -69,6 +81,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     loadData('site_testimonials', setTestimonials);
     loadData('site_faqs', setFaqs);
     loadData('site_services', setServices);
+    loadData('site_hotels', setHotels);
+    loadData('site_transports', setTransports);
     
     setIsLoaded(true);
   }, []);
@@ -83,8 +97,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       localStorage.setItem('site_testimonials', JSON.stringify(testimonials));
       localStorage.setItem('site_faqs', JSON.stringify(faqs));
       localStorage.setItem('site_services', JSON.stringify(services));
+      localStorage.setItem('site_hotels', JSON.stringify(hotels));
+      localStorage.setItem('site_transports', JSON.stringify(transports));
     }
-  }, [packages, siteImages, gallery, contactInfo, testimonials, faqs, services, isLoaded]);
+  }, [packages, siteImages, gallery, contactInfo, testimonials, faqs, services, hotels, isLoaded]);
+  
 
   // Packages Logic
   const addPackage = (pkg: TourPackage) => setPackages(prev => [...prev, pkg]);
@@ -112,6 +129,16 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setServices(prev => prev.map(s => s.id === updatedService.id ? updatedService : s));
   };
 
+  // Hotels Logic
+  const addHotel = (h: Hotel) => setHotels(prev => [...prev, h]);
+  const updateHotel = (updated: Hotel) => setHotels(prev => prev.map(h => h.id === updated.id ? updated : h));
+  const deleteHotel = (id: string) => setHotels(prev => prev.filter(h => h.id !== id));
+
+  // Transports Logic
+  const addTransport = (t: import('../types').Transport) => setTransports(prev => [...prev, t]);
+  const updateTransport = (updated: import('../types').Transport) => setTransports(prev => prev.map(t => t.id === updated.id ? updated : t));
+  const deleteTransport = (id: string) => setTransports(prev => prev.filter(t => t.id !== id));
+
   const resetData = () => {
     setPackages(INITIAL_PACKAGES);
     setSiteImages(INITIAL_SITE_IMAGES);
@@ -120,6 +147,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setTestimonials(INITIAL_TESTIMONIALS);
     setFaqs(INITIAL_FAQS);
     setServices(INITIAL_SERVICES);
+    setHotels(INITIAL_HOTELS as Hotel[]);
+    setTransports(INITIAL_TRANSPORTS as import('../types').Transport[]);
     
     localStorage.removeItem('site_packages');
     localStorage.removeItem('site_images');
@@ -128,17 +157,23 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.removeItem('site_testimonials');
     localStorage.removeItem('site_faqs');
     localStorage.removeItem('site_services');
+    localStorage.removeItem('site_hotels');
+    localStorage.removeItem('site_transports');
   };
 
   return (
     <DataContext.Provider value={{ 
       packages, siteImages, gallery, contactInfo, testimonials, faqs, services,
+      hotels,
       addPackage, updatePackage, deletePackage,
       updateSiteImages, addToGallery, removeFromGallery,
       updateContactInfo,
       addTestimonial, deleteTestimonial,
       addFaq, deleteFaq,
       updateService,
+      addHotel, updateHotel, deleteHotel,
+        transports,
+        addTransport, updateTransport, deleteTransport,
       resetData 
     }}>
       {children}

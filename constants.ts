@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, TourPackage, Testimonial, GalleryImage, SiteImages, Service } from './types';
+import { NavLink, TourPackage, Testimonial, GalleryImage, SiteImages, Service, Hotel, Transport } from './types';
 import { MapPin, Sun, Moon, Coffee, Landmark, Users, BedDouble, Bus, UserCheck, Globe } from 'lucide-react';
 
 export const CONTACT_INFO = {
@@ -659,5 +659,173 @@ export const FAQ_DATA = [
   {
     "question": "Do you arrange for Pind Daan rituals?",
     "answer": "Yes, we have dedicated priests in Varanasi, Prayagraj, and Gaya to conduct Pind Daan and other religious rituals authentically."
+  }
+];
+
+export const INITIAL_HOTELS: Hotel[] = [
+  {
+    "id": "1765613482345",
+    "name": "Radisson Hotel  varanasi",
+    "location": "Varanasi",
+    "address": "Varanasi, Uttar Pradesh",
+    "rating": 0,
+    "price": "",
+    "currency": "",
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/eb/87/ed/radisson-hotel-varanasi.jpg?w=500&h=-1&s=1"
+    ],
+    "amenities": [],
+    "description": "",
+    "contact": "",
+    "website": ""
+  },
+  {
+    "id": "1765614759369",
+    "name": "Hotel Ramada ",
+    "location": "Varanasi",
+    "address": "Varanasi, Uttar Pradesh",
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/d9/28/26/ramada-plaza-jhv-varanasi.jpg?w=700&h=-1&s=1"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765614889642",
+    "name": "Hotel Madin ",
+    "location": "Varanasi",
+    "address": "Varanasi, Uttar Pradesh",
+    "images": [
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201608231653085625-255a4e6afe3211eabe360242ac110002.jpg"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765615352313",
+    "name": "Taj Ganges",
+    "location": "Varanasi",
+    "address": "Varanasi, Uttar Pradesh",
+    "images": [
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/48557750.jpg?k=5b3739e8a877776a36514c482180c227249de4bc4de4db85215e9ae7f0be8b87&o="
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765615404375",
+    "name": "Park Inn by Radisson",
+    "location": "Ayodhya",
+    "address": "Ayodhya, Uttar pradesh",
+    "images": [
+      "https://r1imghtlak.mmtcdn.com/c74aa4f0b12a11ee8b450a58a9feac02.jpg?&output-quality=75&downsize=520:350&crop=520:350;12",
+      "0&output-format=jpg"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765615701007",
+    "name": "Cygnett Collection KK Hotel",
+    "location": "Ayodhya",
+    "address": "Ayodhya, Uttar pradesh",
+    "images": [
+      "https://gos3.ibcdn.com/f171ac2299a311eeb37a0a58a9feac02.jpg"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765615874769",
+    "name": "Praveg Tent City Saryu",
+    "location": "Ayodhya",
+    "address": "Ayodhya, Uttar pradesh",
+    "images": [
+      "https://cf.bstatic.com/xdata/images/hotel/max500/550200457.jpg?k=0b47d7b45bbd7c48e1728343dbb0f2ee5111e1a8f6dbd6606054c5df2c6238ff&o=&hp=1"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765616220985",
+    "name": "Amritara Ramila Kutir",
+    "location": "Ayodhya",
+    "address": "Ayodhya, Uttar pradesh",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxutE-DpmjMeOwd7S8yEG3sWI0oC1M_2IKMg&s"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765616654769",
+    "name": "Hotel hira inn",
+    "location": "Prayagraj",
+    "address": "Prayagraj, Uttar pradesh",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNIyxFofj882tr4OIOERgZ85LLkgrKpf7EYw&s"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765616927312",
+    "name": "Millennium Inn",
+    "location": "Prayagraj",
+    "address": "Prayagraj, Uttar pradesh",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9c7nFoaWalC7S7RzSGbccXSwEjcklJP2Zg&s"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765617025201",
+    "name": "Grand Continental Hotel",
+    "location": "Prayagraj",
+    "address": "Prayagraj, Uttar pradesh",
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/49/1e/85/hotel-grand-continental.jpg?w=500&h=-1&s=1"
+    ],
+    "description": ""
+  },
+  {
+    "id": "1765617247581",
+    "name": "WelcomHeritage Badi Kothi",
+    "location": "Prayagraj",
+    "address": "Prayagraj, Uttar pradesh",
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/6d/04/31/wh-badi-kothi-facade.jpg?w=900&h=-1&s=1"
+    ],
+    "description": ""
+  }
+];
+
+export const INITIAL_TRANSPORTS: Transport[] = [
+  {
+    "id": "1765624866083",
+    "name": "Maruti Suzuki Dzire",
+    "image": "https://www.carblogindia.com/wp-content/uploads/2024/02/new-generation-2024-maruti-dzire-front-three-quarters-rendering.jpg"
+  },
+  {
+    "id": "1765625009791",
+    "name": "Innova crysta",
+    "image": "https://m.media-amazon.com/images/I/51DTZ3GOByL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "1765625092528",
+    "name": "Kia Carens",
+    "image": "https://imgd.aeplcdn.com/370x208/n/a97j3cb_1726575.jpg?q=80"
+  },
+  {
+    "id": "1765625181640",
+    "name": "Maruti ertiga",
+    "image": "https://imgd.aeplcdn.com/642x336/n/c6es93a_1572125.jpg?q=80"
+  },
+  {
+    "id": "1765626204852",
+    "name": "Tempo traveller",
+    "image": "https://www.vpltravels.com/wp-content/uploads/2024/01/18-Seater-Tempo-Traveller-Rental-in-Chennai.webp"
+  },
+  {
+    "id": "1765626255496",
+    "name": "Force Urbania",
+    "image": "https://dashboard.manojtravels.in/assets/uploads/1722181068.png"
+  },
+  {
+    "id": "1765626368866",
+    "name": "Luxury buses",
+    "image": "https://applecarrentals.com/assets/web/images/about/bus.jpg"
   }
 ];

@@ -5,12 +5,12 @@ import { ArrowLeft, Copy, CheckCircle, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ExportData: React.FC = () => {
-  const { packages, siteImages, gallery, contactInfo, testimonials, faqs, services } = useData();
+  const { packages, siteImages, gallery, contactInfo, testimonials, faqs, services, hotels, transports } = useData();
   const [copied, setCopied] = useState(false);
 
   const generateCode = () => {
     return `import React from 'react';
-import { NavLink, TourPackage, Testimonial, GalleryImage, SiteImages, Service } from './types';
+import { NavLink, TourPackage, Testimonial, GalleryImage, SiteImages, Service, Hotel, Transport } from './types';
 import { MapPin, Sun, Moon, Coffee, Landmark, Users, BedDouble, Bus, UserCheck, Globe } from 'lucide-react';
 
 export const CONTACT_INFO = ${JSON.stringify(contactInfo, null, 2)};
@@ -49,6 +49,10 @@ export const PACKAGES: TourPackage[] = ${JSON.stringify(packages, null, 2)};
 export const TESTIMONIALS: Testimonial[] = ${JSON.stringify(testimonials, null, 2)};
 
 export const FAQ_DATA = ${JSON.stringify(faqs, null, 2)};
+
+export const INITIAL_HOTELS: Hotel[] = ${JSON.stringify(hotels || [], null, 2)};
+
+export const INITIAL_TRANSPORTS: Transport[] = ${JSON.stringify(transports || [], null, 2)};
 `;
   };
 
@@ -56,6 +60,19 @@ export const FAQ_DATA = ${JSON.stringify(faqs, null, 2)};
     navigator.clipboard.writeText(generateCode());
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleDownload = () => {
+    const code = generateCode();
+    const blob = new Blob([code], { type: 'text/typescript' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'constants.ts';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -80,17 +97,22 @@ export const FAQ_DATA = ${JSON.stringify(faqs, null, 2)};
               <Code size={18} />
               <span>constants.ts</span>
             </div>
-            <Button onClick={handleCopy} size="sm" className={copied ? "bg-green-600 hover:bg-green-700" : ""}>
-              {copied ? (
-                <>
-                  <CheckCircle size={16} className="mr-2" /> Copied!
-                </>
-              ) : (
-                <>
-                  <Copy size={16} className="mr-2" /> Copy Code
-                </>
-              )}
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button onClick={handleDownload} size="sm" className="mr-2">
+                <Code size={16} className="mr-2" /> Download File
+              </Button>
+              <Button onClick={handleCopy} size="sm" className={copied ? "bg-green-600 hover:bg-green-700" : ""}>
+                {copied ? (
+                  <>
+                    <CheckCircle size={16} className="mr-2" /> Copied!
+                  </>
+                ) : (
+                  <>
+                    <Copy size={16} className="mr-2" /> Copy Code
+                  </>
+                )}
+              </Button>
+            </div>
           </div>
           <div className="relative">
             <pre className="p-6 bg-[#1e1e1e] text-blue-300 overflow-auto h-[600px] text-sm font-mono leading-relaxed selection:bg-blue-500/30">

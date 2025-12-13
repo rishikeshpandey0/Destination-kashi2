@@ -10,6 +10,7 @@ const ServiceDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { services } = useData();
   const service = services.find((s) => s.id === id);
+  const { hotels } = useData();
 
   if (!service) {
     return (
@@ -84,11 +85,22 @@ const ServiceDetail: React.FC = () => {
 
             <div className="text-center">
                 <h3 className="text-2xl font-serif font-bold text-brand-dark mb-6">Interested in this Service?</h3>
-                <Link to="/contact">
-                    <Button size="lg" className="w-full md:w-auto shadow-xl">
-                        Enquire Now
-                    </Button>
-                </Link>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Link to="/contact">
+                    <Button size="lg" className="w-full sm:w-auto shadow-xl">Enquire Now</Button>
+                  </Link>
+
+                  {service.id === 'premium-hotels' && (
+                    <Link to="/hotels?highlight=premium">
+                      <Button variant="outline" size="lg" className="w-full sm:w-auto">View Premium Hotels</Button>
+                    </Link>
+                  )}
+                  {service.id === 'transport-services' && (
+                    <Link to="/transports">
+                      <Button variant="outline" size="lg" className="w-full sm:w-auto">View Transport</Button>
+                    </Link>
+                  )}
+                </div>
             </div>
         </motion.div>
       </div>
